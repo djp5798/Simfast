@@ -1,0 +1,165 @@
+#AppContainer{
+	margin: auto;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#mainContainer{
+	display:inline-flex;
+	
+	height:100%;
+
+	margin: auto;
+}
+
+.screenHalf{
+	display:inline-block;
+	border-style: outset;
+	border-width: 0px;
+	background-color: var;
+	border-color: var;
+	border-radius: 2px;
+	padding:10px;
+	margin:0px;
+}
+#leftSide{
+	/*height:100vh;*/
+	/*display: inline-block;*/
+	flex-direction: column;
+	position: relative;
+	margin-left: 0
+
+}
+#rightSide{
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-right: 0;
+	max-width: 500px;
+	min-width: 500px;
+
+}
+#flightListScreen{
+	position:relative;
+	margin:2px;
+	width:100%;
+	height:30%;
+	background-color: #EEF6DF;
+	padding:0px;
+	flex-grow: 3;
+	overflow: scroll;
+
+	font-size: 14px;
+	border-radius: 2px;
+
+	box-shadow: 2px 0px 4px inset black;
+	border-color:black
+}	
+
+#flightStripContainer{
+
+	margin-top: 20px;
+	margin-bottom: 20px;*/
+	min-height: 20px;
+	max-height:100px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	flex-grow: -1;
+	font-size: 15px;
+	font-weight: 900;
+	font-family: "Lucida Console", "Courier New", monospace;
+
+	border-radius: 2px;
+	border-style: outset;
+
+	box-shadow: 2px 2px 4px inset black,-5px -2px 4px inset black;
+	background-color: rgba(204,194,163,1.00);
+	display:grid;
+	grid-template-columns: 1.5fr 1fr 1fr 2fr .5fr .5fr .5fr;
+}
+.flightStripCol{
+	display:grid;
+
+	template-rows: 1fr 1fr 1fr;
+	border-style: solid;
+	border-left-style: solid;
+	border-right-style:solid;
+	border-color: black;
+	border-width: 1px; 
+
+}
+.flightStripColBlock{
+	position: relative;
+	display:block;
+	padding:10px;
+	border-right-style: solid;
+	border-color: black;
+	border-width: 1px; 
+	
+}
+
+img[alt="moop"]{visibility: hidden}
+img[src="barcode.png"]{
+	visibility: visible;
+	position: absolute;
+	bottom:3px;
+	right:10px;
+}
+.flightStripRow{
+	border-bottom-style: solid;
+	border-color: black;
+	border-width: 1px; 
+	overflow: visible;
+	padding:5px;
+
+}
+
+
+#bigBox{
+	overflow:visible;
+	display:inline-block;
+	padding:5px;
+	max-width:200px;
+	min-width: 200px;
+	
+}
+#bigBox p{
+	word-wrap: break-word;
+}
+#bigBox div{
+	padding:5px;
+	width:100%;
+	height:100%;
+	background-color: red;
+	word-wrap: break-word;
+	
+}
+
+#largeBox{
+	grid-row-span: 10;
+	grid-row-end: 3;
+	padding:5px;
+}
+
+#keyboardContainer{
+	
+	display:flex;
+	flex-direction:column;
+	padding:10px;
+	border-radius: 5px;
+	background-color: rgba(0);
+
+	flex-grow: 9;
+	line-height:10px;
+	height:70%;
+}
+
+
+#inputContainer{
+	padding:5px;
+	height:20%;
+	flex-grow:1;
+}
+
